@@ -4,10 +4,8 @@
   <button type="submit">Login</button>
 </form>
 
-{{# }}
+{{error}}
 
-{{/ }}
-
-{{^ }}
-<p>Your login username and/or password are not correct</p>
-{{/ }}
+{{#errors}}
+  <p>{{.}}</p>
+{{/errors}}

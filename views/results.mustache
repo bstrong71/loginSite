@@ -1,3 +1,8 @@
-<h2>You are now logged in!</h2>
-<br>
-<p>You are logged in as user: {{username}}</p>
+
+{{errors}}
+
+{{^errors}}
+  <h2>You are now logged in!</h2>
+  <br>
+  <p>You are logged in as user: {{username}}</p>
+{{/errors}}
